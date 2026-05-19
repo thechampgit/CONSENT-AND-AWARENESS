@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consent & Awareness Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Emergency Help Bar at the Top -->
+    <div id="top-helpline">
+        <p><i data-lucide="phone-call" size="18"></i> Emergency Helpline: <strong>9341-854-494</strong></p>
+    </div>
+
+    <!-- Decorative background elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="flower-decoration top-right"></div>
+    <div class="flower-decoration bottom-left"></div>
+
+    <header>
+        <div class="logo-container">
+            <div class="hub-logo">
+                <i data-lucide="heart"></i>
+            </div>
+            <h1>Consent & Awareness</h1>
+        </div>
+        <p class="highlight-text animate-pulse">Your Voice is Your Power. Silence is the Only Weapon They Have Against
+            You.</p>
+    </header>
+
+    <div class="main-layout">
+        <main id="app">
+            <!-- Visual Showcase Section -->
+            <section id="visual-showcase" class="fade-in">
+                <div class="showcase-header">
+                    <h2>Embrace Your Strength</h2>
+                    <p>Every step towards boundaries is a step towards self-love.</p>
+                </div>
+                <div class="image-grid">
+                    <div class="showcase-img-container main-feature">
+                        <img src="https://i.pinimg.com/originals/ec/55/92/ec55921868b4d0840b178470bc5e18231.jpg"
+                            alt="Strength and Roots">
+                        <div class="img-overlay">
+                            <p class="img-caption">Strength in Growth</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Onboarding Phase (Bigger & Eye-catching) -->
+            <section id="onboarding" class="fade-in hero-card">
+                <div class="hero-content">
+                    <h2>Personalize Your Journey</h2>
+                    <p class="hero-subtitle">We tailor every scenario to your world. Tell us who you are.</p>
+
+                    <div class="hero-form">
+                        <div class="form-row">
+                            <div class="form-group big-input">
+                                <label for="user-age"><i data-lucide="user"></i> Your Age</label>
+                                <input type="number" id="user-age" placeholder="Ex: 21" min="1" max="100">
+                            </div>
+                            <div class="form-group big-input">
+                                <label for="user-field"><i data-lucide="briefcase"></i> Field of Work/Study</label>
+                                <select id="user-field">
+                                    <option value="General">Select your environment</option>
+                                    <option value="Student">School/College Student</option>
+                                    <option value="Corporate">Corporate / Office</option>
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="Freelancer">Freelancing / Creative</option>
+                                    <option value="Retail">Retail / Service</option>
+                                    <option value="Remote">Remote Work</option>
+                                    <option value="HomeBased">Home-based / Homemaker</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Front Page Issue Box -->
+                        <div class="form-group front-issue-box-v2">
+                            <label for="front-issue">Have a specific worry right now? Describe it below:</label>
+                            <textarea id="front-issue"
+                                placeholder="Ex: 'My senior keeps making comments about...'"></textarea>
+                            <button class="glass-btn" onclick="getFrontHelp()">
+                                <i data-lucide="sparkles"></i> Get Heartfelt Guidance
+                            </button>
+                            <div id="front-guidance" class="hidden guidance-box-v2"></div>
+                        </div>
+
+                        <button class="primary-btn hero-btn" onclick="startExperience()">
+                            Start My Personalized Experience <i data-lucide="sparkles"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Breaking the Silence Section (Heartwarming Image Added) -->
+            <section id="about-us" class="fade-in heart-card">
+                <div class="card-side-img">
+                    <img src="https://i.pinimg.com/564x/44/14/f4/4414f49451996d99461ebd1d20bf857d.jpg"
+                        alt="Nurturing the Mind">
+                </div>
+                <div class="card-text">
+                    <h2>Healing & Awareness</h2>
+                    <p>We believe that growth begins the moment you decide your comfort matters. This hub isn't just
+                        about rules; it's about the warmth of a community that stands with you. We empower you to
+                        reclaim your peace, one boundary at a time.</p>
+                </div>
+            </section>
+
+            <!-- Revolt Section (Expanded Reasons) -->
+            <section id="revolt-section" class="fade-in revolt-glass">
+                <h2>Why Speaking Up Changes Everything</h2>
+                <div class="revolt-grid">
+                    <div class="revolt-card">
+                        <i data-lucide="shield-alert"></i>
+                        <h4>Protect the Next</h4>
+                        <p>Your "No" sets a standard that protects every woman who enters that space after you.</p>
+                    </div>
+                    <div class="revolt-card">
+                        <i data-lucide="heart-handshake"></i>
+                        <h4>Self-Love in Action</h4>
+                        <p>Setting a boundary is the ultimate act of kindness to yourself and your mental peace.</p>
+                    </div>
+                    <div class="revolt-card">
+                        <i data-lucide="flame"></i>
+                        <h4>Expose the Shadows</h4>
+                        <p>Injustice thrives in silence. When you speak, you bring light to where others can't hide
+                            anymore.</p>
+                    </div>
+                    <div class="revolt-card">
+                        <i data-lucide="baby"></i>
+                        <h4>For the Future</h4>
+                        <p>Show the younger generation that they never have to compromise their dignity for success.</p>
+                    </div>
+                    <div class="revolt-card">
+                        <i data-lucide="unlock"></i>
+                        <h4>Break the Habit</h4>
+                        <p>Habitual boundary-crossers stop only when they meet a firm, unwavering wall.</p>
+                    </div>
+                    <div class="revolt-card">
+                        <i data-lucide="stars"></i>
+                        <h4>Reclaim Your Energy</h4>
+                        <p>Stop wasting energy on discomfort and spend it on your dreams and happiness.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meet Our Team & Get Involved (Better Looking) -->
+            <div class="team-involvement-container">
+                <section id="meet-us" class="fade-in team-section">
+                    <h3><i data-lucide="users"></i> Meet Our Kind Team</h3>
+                    <div class="team-grid">
+                        <div class="member">
+                            <div class="avatar">SJ</div>
+                            <p><strong>Sarah J.</strong><br>Legal Advocate</p>
+                        </div>
+                        <div class="member">
+                            <div class="avatar">RM</div>
+                            <p><strong>Reema M.</strong><br>Survivor Support</p>
+                        </div>
+                        <div class="member">
+                            <div class="avatar">AL</div>
+                            <p><strong>Anita L.</strong><br>Psychologist</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="get-involved" class="fade-in involve-section">
+                    <h3><i data-lucide="hand-metal"></i> Join the Movement</h3>
+                    <p>Be the change you want to see. Help us reach move women with empathy.</p>
+                    <div class="involve-actions">
+                        <button class="mini-btn"><i data-lucide="mail"></i> Volunteer</button>
+                        <button class="mini-btn"><i data-lucide="share-2"></i> Share Story</button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Quiz Elements (Hidden initially) -->
+            <div id="progress-bar-container" class="hidden">
+                <div id="progress-bar"></div>
+            </div>
+
+            <section id="scenario-box" class="hidden">
+                <h2 id="scenario-title"></h2>
+                <p id="scenario-text"></p>
+                <div id="choices"></div>
+                <div id="feedback"></div>
+                <button id="next-btn" onclick="nextScenario()" disabled>
+                    Next Scenario <i data-lucide="arrow-right"></i>
+                </button>
+            </section>
+
+            <section id="result" class="hidden">
+                <h2 id="result-title">Your Journey Today</h2>
+                <p id="score-text"></p>
+                <button class="restart-btn" onclick="restart()">
+                    <i data-lucide="rotate-ccw"></i> Restart Journey
+                </button>
+            </section>
+        </main>
+
+        <!-- New Sidebar -->
+        <aside id="sidebar" class="fade-in">
+            <div class="sidebar-section news-card">
+                <h3><i data-lucide="newspaper"></i> Safety News</h3>
+                <div class="news-list">
+                    <div class="news-item">
+                        <p>New workplace safety guidelines adopted globally to support mental well-being.</p>
+                    </div>
+                    <div class="news-item">
+                        <p>Legal wins for digital privacy creators in three major tech hubs this month.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section injustice-card">
+                <h3><i data-lucide="frown"></i> Facing Injustice</h3>
+                <div class="injustice-stat">
+                    <span>Gender Pay Gap</span>
+                    <div class="stat-bar">
+                        <div class="fill" style="width: 82%;"></div>
+                    </div>
+                </div>
+                <div class="injustice-stat">
+                    <span>Unpaid Labor</span>
+                    <div class="stat-bar">
+                        <div class="fill" style="width: 94%;"></div>
+                    </div>
+                </div>
+                <div class="injustice-stat">
+                    <span>Street Harassment</span>
+                    <div class="stat-bar">
+                        <div class="fill" style="width: 76%;"></div>
+                    </div>
+                </div>
+                <p class="small-info">Together, we turn statistics into stories of resilience.</p>
+            </div>
+
+            <div class="sidebar-love-card">
+                <i data-lucide="heart" class="heart-pulse"></i>
+                <p>Healing is not a race. You are doing amazing just by being here.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-warm-frame">
+            <p><i data-lucide="mail"></i> We're here to listen</p>
+            <a href="mailto:menarepathetic@gmail.com" class="email-link">menarepathetic@gmail.com</a>
+            <p class="footer-helpline-sub">Or call 24/7: 9341-854-494</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
